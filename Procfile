@@ -1,1 +1,1 @@
-gunicorn: webhook-router:app -w 3 -b '0.0.0.0:8000' -k gevent --max-requests 250
+web: gunicorn webhook-router:app -w 3 -b '0.0.0.0:8000' -k gevent --max-requests 250
