@@ -1,1 +1,1 @@
-web: python webhook-router.py
+gunicorn webhook-router:app -w 3
